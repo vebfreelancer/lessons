@@ -1,0 +1,45 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.header-content, .logo,
+.adventures-wrapper,
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+.header-content,
+.footer-content {
+    justify-content: space-between;
+}
+.logo span {
+    font-size: 50px;
+}
+.site-nav {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.first-screen-info {
+    margin-bottom: 25px;
+}
+.adventures-wrapper {
+    column-gap: 20px;
+}
+.adventures-image img {
+    max-width: 100%;
+}
+.footer {
+    margin-top: 30px;
+}
+.button-up {
+    text-align: center;
+}
+.pale-text {
+    color: #9fb1c1;
+}
