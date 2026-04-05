@@ -1,0 +1,55 @@
+[href] {
+    color: #4b3eff;
+}
+
+#main-title {
+    color: #1299dc;
+}
+.text {
+    color: #1617ac;
+}
+.main-text {
+    color: #b13d37;
+}
+.secondary-title {
+    color: orangered;
+}
+
+div[id$="ukrainian-state"] .article-constitution {
+    color: red;
+}
+div[id^="ukrainian-state"] .roman-symbols {
+    color: #987676;
+}
+
+h3 {
+    color: #ff8600;
+}
+
+.state-territory .list li {
+    color: #1617ac;
+}
+.state-territory .list li + li {
+    color: #d3d31a;
+}
+#state-territory > p {
+    color: #992c2c;
+}
+
+.population h3 ~ span {
+    color: #2ab6e6;
+}
+
+.area .list-item,
+.climate .list-item,
+.population .list-item {
+    color: #43403d;
+}
+
+.list li > h4 {
+    color: #4b3eff;
+}
+
+.footer .nav a {
+    color: #ff8f23;
+}
