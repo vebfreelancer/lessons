@@ -1,0 +1,216 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+.nav-item {
+    display: inline-block;
+}
+.nav li ~ li {
+    margin-left: 10px;
+}
+.nav-link {
+    color: mediumaquamarine;
+} 
+
+.section ~ .section{
+    margin-top: 30px;
+}
+
+.section div ~ div{
+    margin-top: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    color: indianred;
+    margin-bottom: 25px;
+}
+h2 {
+    font-size: 26px;
+    color: lightseagreen;
+    margin-bottom: 10px;
+}
+h3 {
+    font-size: 22px;
+    color: lightslategray;
+    margin-bottom: 5px;
+}
+p {
+    color: dimgray;
+}
+.block p {
+    background-color: lightgreen;
+}
+.inline-block p {
+    background-color: lightgreen;
+    display: inline-block;
+}
+.inline a {
+    background-color: lightgreen;
+    color: navy;
+}
+
+.border-box {
+    background-color: lightgreen;
+    width: 500px;
+    padding: 20px;
+}
+.content-box {
+    background-color: lightgreen;
+    box-sizing: content-box;
+    width: 500px;
+    padding: 20px;
+}
+.padding div {
+    background-color: bisque;
+}
+.padding-all {
+    padding: 20px;
+}
+.padding-vertical {
+    padding: 20px 0px;
+}
+.padding-horizontal {
+    padding: 0px 20px;
+}
+.padding-top {
+    padding-top: 20px;
+}
+.padding-right {
+    padding-right: 20px;
+}
+.padding-bottom {
+    padding-bottom: 20px;
+}
+.padding-left {
+    padding-left: 20px;
+}
+
+.margin p {
+    padding: 20px;
+}
+.margin p {
+    background-color: lightgreen;
+}
+.margin-vertical p ~ p {
+    margin-top: 20px;
+}
+.margin-horizontal-row {
+    font-size: 0px;
+}
+.margin-horizontal-row p {
+    display: inline-block;
+    font-size: 20px;
+}
+.margin-horizontal .first-child {
+    margin-right: 20px;
+}
+
+.text-1 {
+    margin-bottom: 20px;
+}
+.text-2 {
+    margin-top: 15px;
+}
+
+.fix-size div {
+    background-color: paleturquoise;
+    width: 300px;
+    height: 150px;
+}
+.size div div {
+    padding: 20px;
+}
+.min-max-size div {
+    background-color: paleturquoise;
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 400px;
+    max-height: 300px;
+}
+
+.overflow div div {
+    background-color: bisque;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+}
+.visible {
+    white-space: nowrap;
+}
+.hidden {
+    overflow: hidden;
+}
+.scroll {
+    overflow: scroll;
+}
+.auto {
+    overflow: auto;
+}
+
+.vertical-align div div {
+    background-color: lightgreen;
+    padding: 20px;
+}
+.vertical-align img {
+    max-width: 400px;
+}
+.top img {
+    vertical-align: top;
+}
+.bottom img {
+    vertical-align: bottom;
+}
+.custom img {
+    vertical-align: -10px;
+}
+
+.frame {
+    background-color: #FFF3E3;
+    max-width: 643px;
+    border-radius: 10px;
+    padding: 60px 40px 40px 40px;
+    font-family: 'Poppins', sans-serif;
+}
+.lable {
+    font-weight: 600;
+    font-size: 16px;
+    color: #333333;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+}
+.main-title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 1.222;
+    color: #B88E2F;
+    max-width: 460px;
+    margin-bottom: 17px;
+}
+.sub-text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.45;
+    color: #333333;
+    margin-bottom: 46px;
+}
+.button {
+    background-color: #B88E2F;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    min-width: 222px;
+    padding: 25px;
+}
+
+.footer {
+    padding: 25px;
+}

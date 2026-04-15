@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відступи та розміри в CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Відступи та розміри в CSS</h1>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#display" class="nav-link">Display</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#box-sizing" class="nav-link">Box-sizing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#padding" class="nav-link">Padding</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#margin" class="nav-link">Margin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#size" class="nav-link">Size</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#overflow" class="nav-link">Overflow</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#vertical-align" class="nav-link">Vertical-align</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="section display" id="display">
+                <h2>Властивість display</h2>
+                <div class="block">
+                    <h3>Значення block</h3>
+                    <p>Займає всю допустиму ширину</p>
+                </div>
+                <div class="inline-block">
+                    <h3>Значення inline-block</h3>
+                    <p>Займає ширину по контенту і приймає властивості блочних елементів</p>
+                </div>
+                <div class="inline">
+                    <h3>Значення inline</h3>
+                    <p>Займає ширину по контенту не приймає властивості блочних елементів</p>
+                    <a href="#">Link</a>
+                </div>
+                <div class="none">
+                    <h3>Значення none</h3>
+                    <p>
+                        При вказанні значення none елемент не відображається в потоці елементів та на нього не діють жодні властивості
+                    </p>
+                </div>
+            </div>
+            <div class="section box-sizing" id="box-sizing">
+                <h2>Властивість box-sizing</h2>
+                <div class="border-box">
+                    <h3>Значення border-box</h3>
+                    <p>Ширина цього блоку 500рх</p>
+                </div>
+                <div class="content-box">
+                    <h3>Значення content-box</h3>
+                    <p>Ширина цього блоку 500рх</p>
+                </div>
+            </div>
+            <div class="section padding" id="padding">
+                <h2>Внутрішній відступ</h2>
+                <div class="padding-all">
+                    <h3>Елемент з внутрішнім відступом довкола</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-vertical">
+                    <h3>Елемент з вертикальними внутрішніми відступами</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-horizontal">
+                    <h3>Елемент з горизонтальними внутрішніми відступами</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-top">
+                    <h3>Елемент з внутрішнім відступом зверху</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-right">
+                    <h3>Елемент з внутрішнім відступом справа</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-bottom">
+                    <h3>Елемент з внутрішнім відступом знизу</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+                <div class="padding-left">
+                    <h3>Елемент з внутрішнім відступом зліва</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime non eum dicta exercitationem nemo corporis earum itaque, eius nulla quos assumenda quam rerum consequuntur soluta esse cupiditate blanditiis? Impedit!
+                    </p>
+                </div>
+            </div>
+            <div class="section margin" id="margin">
+                <h2>Зовнішній відступ</h2>
+                <div class="margin-vertical">
+                    <h3>Вертикальний відступ між елементами</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus deserunt corrupti. Culpa dolorem sequi magni, commodi doloremque perferendis corporis eos velit quae illo, rerum, deleniti necessitatibus saepe unde sit?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus deserunt corrupti. Culpa dolorem sequi magni, commodi doloremque perferendis corporis eos velit quae illo, rerum, deleniti necessitatibus saepe unde sit?</p>
+                </div>
+                <div class="margin-horizontal">
+                    <h3>Горизонтальний відступ між елементами</h3>
+                    <div class="margin-horizontal-row">
+                        <p class="first-child">
+                            Lorem ipsum dolor.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor.
+                        </p>
+                    </div>
+                </div>
+                <div class="margin-collapse">
+                    <h3>Схлопування</h3>
+                    <p class="text-1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, expedita?
+                    </p>
+                    <p class="text-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, expedita?
+                    </p>
+                </div>
+            </div>
+            <div class="section size" id="size">
+                <h2>Висота та ширина</h2>
+                <div class="fix-size">
+                    <h3>Фіксовані розміри</h3>
+                    <div>Цей блок розміром 300рх ширини та 150рх висоти</div>
+                </div>
+                <div class="min-max-size">
+                    <h3>Мінімаьний та максимальний розмір</h3>
+                    <div>Цей блок має мінімальну ширину і висоту 250рх * 200рх та максимальну ширину і висоту 400рх * 300рх</div>
+                </div>
+            </div>
+            <div class="section overflow" id="overflow">
+                <h2>Властивість overflow</h2>
+                <div>
+                    <h3>Значення visible</h3>
+                    <div class="visible">Lorem ipsum dolor sit amet consectetur</div>
+                </div>
+                <div>
+                    <h3>Значення hidden</h3>
+                    <div class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus, fuga, provident voluptate molestias cupiditate suscipit excepturi tenetur omnis accusantium consequatur vitae in eligendi maxime iure doloribus quis debitis amet! Nesciunt, molestiae, quibusdam delectus fugiat ea nulla debitis nobis natus nisi fugit dignissimos sed aliquam illo officiis? Expedita, voluptates facere?</div>
+                </div>
+                <div>
+                    <h3>Значення scroll</h3>
+                    <div class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus, fuga, provident voluptate molestias cupiditate suscipit excepturi tenetur omnis accusantium consequatur vitae in eligendi maxime iure doloribus quis debitis amet! Nesciunt, molestiae, quibusdam delectus fugiat ea nulla debitis nobis natus nisi fugit dignissimos sed aliquam illo officiis? Expedita, voluptates facere?</div>
+                </div>
+                <div>
+                    <h3>Значення auto</h3>
+                    <div class="auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi delectus, fuga, provident voluptate molestias cupiditate suscipit excepturi tenetur omnis accusantium consequatur vitae in eligendi maxime iure doloribus quis debitis amet! Nesciunt, molestiae, quibusdam delectus fugiat ea nulla debitis nobis natus nisi fugit dignissimos sed aliquam illo officiis? Expedita, voluptates facere?</div>
+                </div>
+            </div>
+            <div class="section vertical-align" id="vertical-align">
+                <h2>Властивість vertical-align</h2>
+                <div class="top">
+                    <h3>Значення top</h3>
+                    <div>
+                        <span>рядковий елемент</span>
+                        <img src="./img/business-team-discussing-ideas-startup.jpg" alt="Бізнес команда">
+                    </div>
+                </div>
+                <div class="middle">
+                    <h3>Значення middle</h3>
+                    <div>
+                        <span>рядковий елемент</span>
+                        <img src="./img/business-team-discussing-ideas-startup.jpg" alt="Бізнес команда">
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h3>Значення bottom</h3>
+                    <div>
+                        <span>рядковий елемент</span>
+                        <img src="./img/business-team-discussing-ideas-startup.jpg" alt="Бізнес команда">
+                    </div>
+                </div>
+                <div class="custom">
+                    <h3>Значення в пікселях</h3>
+                    <div>
+                        <span>рядковий елемент</span>
+                        <img src="./img/business-team-discussing-ideas-startup.jpg" alt="Бізнес команда">
+                    </div>
+                </div>
+            </div>
+            <div class="section frame">
+                <span class="lable">New Arrival</span>
+                <!-- Тут має бути h1 -->
+                <h2 class="main-title">Discover Our New Collection</h2>
+                <p class="sub-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.
+                </p>
+                <a href="#" class="button">BUY Now</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#display" class="nav-link">Display</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#box-sizing" class="nav-link">Box-sizing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#padding" class="nav-link">Padding</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#margin" class="nav-link">Margin</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#size" class="nav-link">Size</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#overflow" class="nav-link">Overflow</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#vertical-align" class="nav-link">Vertical-align</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
