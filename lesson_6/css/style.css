@@ -1,0 +1,220 @@
+.header {
+    padding: 25px 0px;
+}
+.nav-item {
+    display: inline-block;
+}
+.nav-item ~ .nav-item {
+    margin-left: 20px;
+}
+
+.header-container,
+.home-work-container {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+}
+
+.home-work-title {
+    font-weight: 800;
+    font-size: 50px;
+}
+.section {
+    padding: 30px 0px;
+}
+.section h2 {
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.section div ~ div {
+    margin-top: 20px;
+}
+
+.border {
+    background-color: lightgreen;
+    border: 5px;
+    border-color: crimson;
+    width: 400px;
+    height: 200px;
+    padding: 30px;
+}
+.border.solid {
+    border-style: solid;
+}
+.border.dotted {
+    border-style: dotted;
+}
+.border.dashed {
+    border-style: dashed;
+}
+.border.double {
+    border-style: double;
+}
+
+.outline {
+    outline: 5px solid orangered;
+    padding: 20px;
+}
+
+.border-radius {
+    background-color: powderblue;
+    width: 450px;
+    height: 200px;
+    padding: 50px;
+}
+.border-radius.item-1 {
+    border-radius: 150px 0;
+}
+.border-radius.item-2 {
+    border-radius: 0 150px;
+}
+.border-radius.item-3 {
+    border-radius: 100%;
+}
+
+.box-shadow {
+    width: 300px;
+    height: 200px;
+    padding: 30px;
+}
+.box-shadow.outset {
+    box-shadow: 15px -5px 15px 15px rgba(92, 88, 87, 0.2);
+}
+.box-shadow.inset {
+    box-shadow: inset 5px 5px 10px 20px rgb(24 179 21 / 50%);
+}
+
+.opacity {
+    background-color: greenyellow;
+    font-weight: 800;
+    font-size: 80px;
+}
+.opacity p {
+    opacity: 30%;
+}
+
+.hidden {
+    width: 300px;
+    height: 200px;
+    visibility: hidden;
+}
+
+.checkout {
+    background-image: url(../img/background_wallet.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+.checkout-container {
+    max-width: 1285px;
+    margin: 0 auto 0 auto;
+}
+.checkout-content {
+    padding: 61px 0 97px 0;
+    text-align: center;
+    line-height: 1.5;
+}
+.checkout-logo-icon {
+    width: 77px;
+    height: 77px;
+    margin: 0 auto 0 auto;
+}
+.checkout-title {
+    font-weight: 500;
+    font-size: 48px;
+}
+.checkout-bread-crumbs {
+    font-size: 0;
+}
+.checkout-bread-crumbs li {
+    background: url(../img/arrow.svg) no-repeat center right;
+    display: inline-block;
+    padding-right: 20px;
+}
+.checkout-bread-crumbs li ~ li {
+    margin-left: 12px;
+}
+.checkout-bread-crumbs li.current {
+    background: none;
+    padding: 0;
+}
+.checkout-bread-crumbs li a {
+    font-weight: 500;
+    font-size: 16px;
+}
+.checkout-bread-crumbs li.current a {
+    font-weight: 300;
+}
+
+.catalist {
+    background-image: url(../img/catalist-bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-color: #030303;
+    margin-top: 30px;
+}
+.catalist-container {
+    max-width: 1266px;
+    margin: 0 auto 0 auto;
+}
+.catalist-content {
+    padding: 94px 0 85px 0;
+    text-align: center;
+}
+.catalist-title {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.5;
+    color: #F9EFEC;
+    margin-bottom: 17px;
+}
+.catalist-button {
+    background-color: #0A84FF;
+    min-width: 235px;
+    border-radius: 12px;
+    padding: 13px;
+    font-family: 'Roboto Flex', serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.info-text {
+    background-color: #030303;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #B3B3B2;
+    padding: 30px 0;
+}
+.info-text-container {
+    background-color: #1A1A1A;
+    border-radius: 12px;
+    max-width: 834px;
+    margin: 0 auto 0 auto;
+    padding: 32px;
+}
+.info-text-container div ~ div {
+    margin-top: 24px;
+}
+.info-text-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #F9EFEC;
+}
+.info-text-block p ~ p {
+    margin-top: 24px;
+}
+.info-text-list li {
+    background: url(../img/list-marker-icon.svg) no-repeat left 4px;
+    min-height: 20px;
+    padding-left: 26px;
+}
+.info-text-list li ~ li {
+    margin-top: 12px;
+}
