@@ -1,0 +1,453 @@
+body {
+    font-family: 'Dm sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+[class*="-container"]:not(.game-container) {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    padding: 10px 0px;
+}
+.header {
+    background-color: lavender;
+}
+
+.header,
+.section,
+.footer {
+    padding: 20px 0px;
+}
+.header-title {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.header-nav {
+    background: linear-gradient(45deg, #650fdfa8, #00ffc49c);
+    border-radius: 30px 500px;
+    padding: 25px;
+    color: white;
+}
+.header-nav li:nth-child(2) { margin-left: 15px; }
+.header-nav li:nth-child(3) { margin-left: 35px; }
+.header-nav li:nth-child(4) { margin-left: 50px; }
+.header-nav li:nth-child(5) { margin-left: 80px; }
+.header-nav li:nth-child(6) { margin-left: 115px; }
+.header-nav li:nth-child(7) { margin-left: 155px; }
+.header-nav li:nth-child(8) { margin-left: 190px; }
+.header-nav li:nth-child(9) { margin-left: 250px; }
+.header-nav li:nth-child(10) { margin-left: 330px; }
+.header-nav li:nth-child(11) { margin-left: 400px; }
+
+.header-nav li:not(:last-child) { margin-bottom: 15px; }
+
+.header-nav li a {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.header-nav li a::before {
+    content: '→';
+    margin-right: 10px;
+    visibility: hidden;
+}
+.header-nav li a:hover::before {
+    visibility: visible;
+}
+.pseudo-classes {
+    background-color: darkorchid;
+}
+.pseudo-classes [class*="-items"] {
+    font-size: 0;
+}
+
+.section:not(:last-child) {
+    margin-bottom: 30px;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+[class*="-items"] a {
+    background-color: #1AAF5B;
+    border-radius: 15px;
+    border: 3px solid transparent;
+    width: 18%;
+    padding: 20px 0px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+[class*="-items"] a:not(:last-child) {
+    margin-right: 30px;
+}
+[class*="-items"] a:not([class^="hover-"], [class^="active-"]):hover {
+    box-shadow: inset -5px -7px 5px 0px yellow;
+    border-color: yellow;
+    color: yellow;
+}
+
+.hover-item-1:hover {
+    background-color: orange;
+}
+.hover-item-2:hover {
+    box-shadow: 5px 5px 15px 5px orange;
+}
+.hover-item-3:hover {
+    border-color: yellow;
+    color: yellow;
+}
+.hover-item-4:hover {
+    box-shadow: inset -5px -7px 5px 0px yellow;
+    color: yellow;
+}
+.hover-item-5:hover {
+    text-decoration: 3px underline solid yellow;
+}
+
+
+.focus-item-1:focus-visible {
+    outline: 5px dashed red;
+}
+.focus-item-2:focus-visible {
+    outline: 5px dotted red;
+}
+.focus-item-3:focus-visible {
+    outline: 5px double red;
+}
+.focus-item-4:focus-visible {
+    outline: 5px outset red;
+}
+.focus-item-5:focus-visible {
+    outline: 5px groove red;
+}
+
+.active-items a:hover {
+    box-shadow: 5px 5px 15px 5px orange;
+}
+.active-item-1:active {
+    background-color: orange;
+}
+.active-item-2:active {
+    color: red;
+}
+.active-item-3:active {
+    border: 5px solid red;
+}
+.active-item-4:active {
+    text-decoration: underline 3px wavy red;
+}
+.active-item-5:active {
+    background-color: orange;
+    border: 5px solid red;
+    color: red;
+}
+
+.visited-item-1:visited {
+    color: darkmagenta;
+}
+.visited-item-2:visited {
+    background-color: darkmagenta;
+}
+
+.first-last * {
+    padding: 20px;
+}
+
+.first-last *:not(:last-child) { margin-bottom: 20px; }
+
+.first-last div:first-child,
+.first-last div:last-of-type {
+    background-color: turquoise;
+}
+
+.first-last p:first-of-type,
+.first-last p:last-child {
+    background-color: silver;
+}
+
+.nth-child-type {
+    font-size: 0;
+}
+.nth-child-type * {
+    background-color: rgb(0, 255, 136);
+    display: inline-block;
+    width: 23.75%;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.nth-child-type p:nth-child(odd) {
+    background-color: darksalmon;
+}
+.nth-child-type p:nth-child(even) {
+    background-color: lightyellow;
+}
+
+.nth-child-type p:nth-of-type(3n + 4) {
+    background-color: khaki;
+}
+.nth-child-type p:nth-of-type(3n - 3) {
+    background-color: aquamarine;
+}
+
+.nth-child-type p:nth-child(4) ~ * {
+    margin-top: 20px;
+}
+.nth-child-type p {
+    margin-right: 20px;
+}
+.nth-child-type p:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.has-not:has(p){
+    background-color: #1AAF5B;
+    padding: 25px;
+}
+
+.has-not p:not(:last-child) {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.pseudo-elements {
+    background-color: lavender;
+    text-align: center;
+    padding: 25px 0;
+}
+.pseudo-elements h2:first-of-type {
+    margin: 30px 0;
+}
+.pseudo-elements::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-right: 50px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+.pseudo-elements::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 50px solid black;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+
+.game h2 {
+    background-color: orange;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 30px;
+}
+.game-canvas {
+    background: url(../img/super-mario-bros-chromebook-wallpaper.jpg) no-repeat center top / cover;
+    min-height: 840px;
+}
+.game-container {
+    max-width: 1500px;
+    margin: 0 auto 0 auto;
+    padding: 0px 10px;
+}
+.game-start {
+    width: 200px;
+}
+.game-item:not(:first-child, .game-finish) {
+    background-color: grey;
+    visibility: hidden;
+}
+.game-track-1 {
+    width: 115px;
+    height: 30px;
+    margin-left: 185px;
+    margin-top: -40px;
+}
+.game-track-2 {
+    width: 30px;
+    height: 345px;
+    margin-left: 300px;
+    margin-top: -30px;
+}
+.game-track-3 {
+    height: 30px;
+    width: 135px;
+    margin-left: 165px;
+    margin-top: -30px;
+}
+.game-track-4 {
+    width: 30px;
+    height: 255px;
+    margin-left: 165px;
+}
+.game-track-5 {
+    width: 745px;
+    height: 30px;
+    margin-left: 165px;
+}
+.game-track-6 {
+    width: 30px;
+    height: 200px;
+    margin-left: 910px;
+    margin-top: -200px;
+}
+.game-track-7 {
+    height: 30px;
+    width: 100px;
+    margin-left: 910px;
+    margin-top: -200px;
+}
+.game-track-8 {
+    width: 30px;
+    height: 170px;
+    margin-left: 980px;
+}
+.game-track-9 {
+    width: 40px;
+    height: 30px;
+    margin-left: 1010px;
+    margin-top: -30px;
+}
+.game-track-10 {
+    width: 30px;
+    height: 100px;
+    margin-left: 1050px;
+    margin-top: -100px;
+}
+.game-track-11 {
+    width: 90px;
+    height: 30px;
+    margin-left: 1050px;
+    margin-top: -130px;
+}
+.game-track-12 {
+    width: 30px;
+    height: 80px;
+    margin-left: 1140px;
+    margin-top: -30px;
+}
+.game-track-13 {
+    width: 50px;
+    height: 30px;
+    margin-left: 1140px;
+}
+.game-track-14 {
+    width: 30px;
+    height: 210px;
+    margin-left: 1190px;
+    margin-top: -210px;
+}
+.game-track-15 {
+    width: 215px;
+    height: 30px;
+    margin-left: 1190px;
+    margin-top: -235px;
+}
+.game-track-16 {
+    width: 30px;
+    height: 105px;
+    margin-left: 1405px;
+    margin-top: -30px;
+}
+
+.game-item:hover + .game-item,
+.game-item:hover {
+    visibility: visible;
+}
+
+.game-finish {
+    background: url(../img/Flagpole.webp) no-repeat center top / cover;
+    width: 160px;
+    height: 150px;
+    margin-left: 1320px;
+}
+
+.game-finish::before {
+    content: '';
+    background: url(../img/fireworks.png) no-repeat center top / cover;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    visibility: hidden;
+}
+.game-finish::after {
+    content: '';
+    background: url(../img/fireworks.png) no-repeat center top / cover;
+    width: 60px;
+    height: 60px;
+    visibility: hidden;
+}
+.game-finish:hover::before {visibility: visible;}
+.game-finish:hover::after {visibility: visible;}
+
+.frame {
+    background-color: beige;
+    padding: 25px 0px;
+}
+.frame h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.frame-block {
+    width: 474px;
+    height: 374px;
+    margin: 0 auto 0 auto;
+    padding-right: 14px;
+}
+.frame-block::before {
+    content: '';
+    background: linear-gradient(90deg, #12FF46, #000);
+    width: 169px;
+    height: 4px;
+    margin-bottom: 17px;
+}
+.frame-title {
+    font-size: 50px;
+    letter-spacing: -1.26px;
+    margin-bottom: 20px;
+}
+.frame-title span {
+    font-weight: 700;
+    color: #1AAF5B;
+}
+.frame-text {
+    font-size: 20px;
+    letter-spacing: -0.5px;
+    line-height: 1.4;
+    margin-bottom: 58px;
+}
+.frame-button {
+    background-color: #1AAF5B;
+    border-radius: 0 18px 0 0;
+    min-width: 209px;
+    padding: 25px 0px;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: -0.43px;
+    text-align: center;
+    color: #fff;
+}
+.frame-button::after {
+    content: '';
+    background: url(../img/keyboard-arrow-right.svg) no-repeat center top / cover;
+    width: 20px;
+    height: 9.6px;
+    margin-left: 18px;
+}
+
+.footer {
+    background-color: lightslategrey;
+    padding: 20px 0px;
+}
+.footer-text {
+    text-align: center;
+}
+
