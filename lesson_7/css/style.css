@@ -442,6 +442,9 @@ body {
     height: 9.6px;
     margin-left: 18px;
 }
+.frame-button:hover {
+    background-color: green;
+}
 
 .footer {
     background-color: lightslategrey;
