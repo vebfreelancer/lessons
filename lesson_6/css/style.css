@@ -100,17 +100,15 @@
 }
 
 .checkout {
-    background-image: url(../img/background_wallet.jpg);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
+    background: url(../img/background_wallet.jpg) no-repeat center top / cover;
+    padding: 61px 0 97px 0;
+    margin-bottom: 30px;
 }
 .checkout-container {
     max-width: 1285px;
     margin: 0 auto 0 auto;
 }
 .checkout-content {
-    padding: 61px 0 97px 0;
     text-align: center;
     line-height: 1.5;
 }
@@ -127,16 +125,14 @@
     font-size: 0;
 }
 .checkout-bread-crumbs li {
-    background: url(../img/arrow.svg) no-repeat center right;
     display: inline-block;
+}
+.checkout-bread-crumbs li:not(:last-child) a {
+    background: url(../img/arrow.svg) no-repeat center right;
     padding-right: 20px;
 }
 .checkout-bread-crumbs li ~ li {
     margin-left: 12px;
-}
-.checkout-bread-crumbs li.current {
-    background: none;
-    padding: 0;
 }
 .checkout-bread-crumbs li a {
     font-weight: 500;
@@ -152,14 +148,13 @@
     background-position: center top;
     background-size: cover;
     background-color: #030303;
-    margin-top: 30px;
+    padding: 94px 0 85px 0;
 }
 .catalist-container {
     max-width: 1266px;
     margin: 0 auto 0 auto;
 }
 .catalist-content {
-    padding: 94px 0 85px 0;
     text-align: center;
 }
 .catalist-title {
@@ -198,23 +193,23 @@
     margin: 0 auto 0 auto;
     padding: 32px;
 }
-.info-text-container div ~ div {
-    margin-top: 24px;
-}
-.info-text-title {
+.info-text-container h3 {
     font-weight: 500;
     font-size: 24px;
     margin-bottom: 12px;
     color: #F9EFEC;
 }
-.info-text-block p ~ p {
-    margin-top: 24px;
+.info-text-container p:not(:last-child) {
+    margin-bottom: 24px;
 }
-.info-text-list li {
+.info-text-container ul {
+    margin-bottom: 24px;
+}
+.info-text-container ul li {
     background: url(../img/list-marker-icon.svg) no-repeat left 4px;
     min-height: 20px;
     padding-left: 26px;
 }
-.info-text-list li ~ li {
+.info-text-container ul li ~ li {
     margin-top: 12px;
 }
