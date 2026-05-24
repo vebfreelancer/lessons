@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1>Web Images</h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <div class="main-content">
+                <div class="retina-image">
+                    <h2>For retina display, image jpg, webp, avif</h2>
+                    <div>
+                        <picture>
+                            <source srcset="img/scandinavian-interior.avif 1x, img/scandinavian-interior-2x.avif 2x, img/scandinavian-interior-3x.avif 3x" type="image/avif">
+                            <source srcset="img/scandinavian-interior.webp 1x, img/scandinavian-interior-2x.webp 2x, img/scandinavian-interior-3x.webp 3x" type="image/webp">
+                            <img src="./img/scandinavian-interior.jpg" alt="scandinavian-interior">
+                        </picture>
+                    </div>
+                </div>
+                <div class="gallery-images">
+                    <h2>JPG image</h2>
+                    <div>
+                        <img src="./img/dining.jpg" alt="dining">
+                        <img src="./img/living.jpg" alt="living">
+                        <img src="./img/bad-room.jpg" alt="bad room">
+                    </div>
+                    <h2>WEBP image</h2>
+                    <div>
+                        <img src="./img/dining.webp" alt="dining">
+                        <img src="./img/living.webp" alt="living">
+                        <img src="./img/bad-room.webp" alt="bad room">
+                    </div>
+                    <h2>AVIF image</h2>
+                    <div>
+                        <img src="./img/dining.avif" alt="dining">
+                        <img src="./img/living.avif" alt="living">
+                        <img src="./img/bad-room.avif" alt="bad room">
+                    </div>
+                </div>
+                <div class="vector-icons">
+                    <h2>Vector icons svg</h2>
+                    <div>
+                        <img src="./img/user.svg" alt="user icon">
+                        <img src="./img/heart.svg" alt="user icon">
+                        <img src="./img/search.svg" alt="user icon">
+                        <img src="./img/shopping-cart.svg" alt="user icon">
+                        <img src="./img/logo.svg" alt="user icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">&COPY; COPYRIGHT</div>
+        </div>
+    </footer>
+</body>
+</html>
