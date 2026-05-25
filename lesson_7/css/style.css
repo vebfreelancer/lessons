@@ -6,7 +6,7 @@ body {
 [class*="-container"]:not(.game-container) {
     max-width: 1200px;
     margin: 0 auto 0 auto;
-    padding: 10px 0px;
+    padding: 0 10px;
 }
 .header {
     background-color: lavender;
